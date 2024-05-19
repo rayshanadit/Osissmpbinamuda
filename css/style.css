@@ -55,6 +55,10 @@ body {
     margin: 0 1.1rem;
 }
 
+.navbar .navbar-nav .ilang {
+    display: none;
+}
+
 .navbar .navbar-nav a:hover {
     color: var(--primary)
 }
@@ -181,17 +185,18 @@ body {
     flex: 1 1 35rem;
     padding: 0 1rem;
     text-align: center;
+    align-content: center;
 }
 
 .Information .row .content h3 {
     font-size: 1.8rem;
-    margin: 0.5rem;
+    margin: 1rem;
 }
 
 .Information .row .content p {
     margin-bottom: 0.8rem;
     font-size: 1.4rem;
-    font-weight: 100;
+    font-weight: 200;
     line-height: 1.6;
 }
 
@@ -232,17 +237,18 @@ body {
     flex: 1 1 35rem;
     padding: 0 1rem;
     text-align: center;
+    align-content: center;
 }
 
 .Information-1 .row .content h3 {
     font-size: 1.8rem;
-    margin: 0.5rem;
+    margin: 1rem;
 }
 
 .Information-1 .row .content p {
     margin-bottom: 0.8rem;
     font-size: 1.4rem;
-    font-weight: 100;
+    font-weight: 200;
     line-height: 1.6;
 }
 
@@ -281,17 +287,18 @@ body {
     flex: 1 1 35rem;
     padding: 0 1rem;
     text-align: center;
+    align-content: center;
 }
 
 .Information-2 .row .content h3 {
     font-size: 1.8rem;
-    margin: 0.5rem;
+    margin: 1rem;
 }
 
 .Information-2 .row .content p {
     margin-bottom: 0.8rem;
     font-size: 1.4rem;
-    font-weight: 100;
+    font-weight: 200;
     line-height: 1.6;
 }
 
@@ -316,6 +323,7 @@ body {
 /* Tentang kami */
 .about {
     margin-top: 7rem;
+    padding: 8rem 0 0;
 }
 
 .about h2 {
@@ -358,10 +366,19 @@ body {
 /* Tentang kami End */
 
 /* Kontak Start */
+.Contact {
+    padding: 8rem 0 0;
+}
+
+.Contact h2 {
+    margin-bottom: 1rem;
+}
+
 .Contact .row {
     display: flex;
     margin-top: 2rem;
     background-color: #222;
+    padding: 1rem;
 }
 
 .Contact .row .map {
@@ -414,7 +431,6 @@ footer {
     background-color: var(--primary);
     text-align: center;
     padding: 1rem 0;
-    margin-top: 3rem;
 }
 
 footer .social {
@@ -453,6 +469,16 @@ footer .credit a {
 
 
 /* media Queris */
+
+@media screen and (min-width: 1200px) {
+    html {
+        font-size: 100%;
+    }
+
+    .navbar .navbar-nav .ilang {
+        display: inline-flex;
+    }
+}
 
 /* Laptop */
 @media screen and (max-width: 1366px) {
@@ -495,6 +521,10 @@ footer .credit a {
         margin: 1,5rem;
         padding: 0.5rem;
         font-size: 2rem;
+    }
+
+    .navbar .navbar-nav .ilang {
+        display: block;
     }
 
     .navbar .navbar-nav a::after{
